@@ -27,6 +27,15 @@ SENSOR_TYPES = {
             icon="mdi:rotate-right",
         ),
     ),
+    "position_deg": (
+        SensorField.FIELD_POSITION_DEG,
+        sensor.sensor_schema(
+            unit_of_measurement="°",
+            accuracy_decimals=1,
+            state_class=STATE_CLASS_MEASUREMENT,
+            icon="mdi:angle-acute",
+        ),
+    ),
     "speed": (
         SensorField.FIELD_SPEED,
         sensor.sensor_schema(

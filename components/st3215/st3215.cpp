@@ -157,6 +157,9 @@ void ST3215Bus::publish_feedback_(uint8_t servo_id, const uint8_t *buf) {
       case FIELD_POSITION:
         s.obj->publish_state((float) pos);
         break;
+      case FIELD_POSITION_DEG:
+        s.obj->publish_state(pos * 360.0f / 4096.0f);  // 12-bit encoder -> degrees
+        break;
       case FIELD_SPEED:
         s.obj->publish_state((float) speed);
         break;

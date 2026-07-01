@@ -44,6 +44,7 @@ enum SensorField : uint8_t {
   FIELD_VOLTAGE,
   FIELD_TEMPERATURE,
   FIELD_CURRENT,
+  FIELD_POSITION_DEG,  // present position converted to degrees (0-360)
 };
 
 enum NumberField : uint8_t {

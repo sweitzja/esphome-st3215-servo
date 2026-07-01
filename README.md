@@ -10,7 +10,7 @@ Per servo ID on the bus, the component exposes:
 
 | Domain | Entities |
 | --- | --- |
-| **sensor** | position, speed, load (%), current (mA), voltage (V), temperature (°C) |
+| **sensor** | position (steps), position_deg (°), speed, load (%), current (mA), voltage (V), temperature (°C) |
 | **binary_sensor** | moving |
 | **number** | target position, goal speed, acceleration, torque limit |
 | **switch** | torque enable |

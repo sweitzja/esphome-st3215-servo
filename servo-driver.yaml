@@ -62,6 +62,9 @@ sensor:
     position:
       name: "Servo Position"
       id: servo_position
+    position_deg:
+      name: "Servo Angle"
+      id: servo_angle
     speed:
       name: "Servo Speed"
       id: servo_speed
