@@ -1,0 +1,21 @@
+# Secrets — NEVER commit real WiFi credentials
+/secrets.yaml
+secrets.yaml
+
+# ESPHome build output
+/.esphome/
+.esphome/
+
+# PlatformIO / build artifacts
+.pioenvs/
+.piolibdeps/
+*.bin
+*.elf
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor / OS
+.DS_Store
+*.swp
