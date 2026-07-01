@@ -7,11 +7,11 @@ esp32:
   framework:
     type: arduino
 
-# --- Local custom component (this repo) ---
+# --- Custom component, pulled from GitHub ---
 external_components:
-  - source:
-      type: local
-      path: components
+  - source: github://sweitzja/esphome-st3215-servo
+    components: [st3215]
+    refresh: 0s   # always pull latest during development; relax to 1d later
 
 logger:
   # UART0 over the CP2102/USB — separate from the servo bus (UART1). Keep this
